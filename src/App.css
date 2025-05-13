@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+  --color-grey: #6D6875;
+  --color-orange: #F4A261;
+  --color-blue: #1D3557;
+  --color-dark-black: #010101;
+  --color-light-grey: #E4E4E4;
+  --color-medium-grey: #BCBCBD;
+}
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.home-hero-bg {
+  background-image: url('./assets/images/webp/home-hero.webp');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.de-active-button {
+  box-shadow: 0px 2px 10px 0px #0000001F;
+}
+
+.hero-drop-down {
+  box-shadow: 0px 2px 19.5px 0px #00000040;
+}
+
+.footer-bg-image{
+  background: url('/src/assets/images/png/footer-bg-image.png') #1D3557 no-repeat  center ;
+}
+
+
+@media (max-width : 992px) {
+  .home-hero-bg {
+    background-size: cover;
+  }
+  .footer-bg-image{
+    background-size: cover;
+  }
+}
