@@ -15,6 +15,7 @@ const HomeHero = () => {
       <ClientReview/>
       <LatestBlogs/>
       <Faq />
+      
     </>
   )
 }
