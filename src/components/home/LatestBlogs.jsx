@@ -5,6 +5,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { CLIENT_BLOGS_LIST } from '../../utils/helper';
+import NextButton from '/image/png/next-btn.png'
+import Clock from "/image/png/clock.png"
+import Calender from "/image/png/clander.png"
 
 const LatestBlogs = () => {
     return (
@@ -13,10 +16,10 @@ const LatestBlogs = () => {
                 <p className='text-[40px] font-semibold text-off-black text-center pb-10'>Our Latest Blog’s</p>
                 <div className="relative group">
                     <div className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 custom-prev-button cursor-pointer hidden xl:block">
-                        <img src="./src/assets/images/png/next-btn.png" alt="prev" className="w-10 h-10 rotate-180" />
+                        <img src={NextButton} alt="prev" className="w-10 h-10 rotate-180" />
                     </div>
                     <div className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 custom-next-button cursor-pointer hidden xl:block">
-                        <img src="./src/assets/images/png/next-btn.png" alt="next" className="w-10 h-10" />
+                        <img src={NextButton} alt="next" className="w-10 h-10" />
                     </div>
                     <Swiper
                         modules={[Navigation, Pagination]}
@@ -44,11 +47,11 @@ const LatestBlogs = () => {
                                     <div className="p-[15px]">
                                         <div className="flex items-center gap-3 border-b border-[#EEEEEE] pb-4">
                                             <div className="flex items-center gap-2">
-                                                <img src="./src/assets/images/png/clander.png" alt="img" />
+                                                <img src={Calender} alt="img" />
                                                 <p>{item.date}</p>
                                             </div><p>|</p>
                                             <div className="flex items-center gap-2">
-                                                <img src="./src/assets/images/clock.png" alt="img" />
+                                                <img src={Clock} alt="img" />
                                                 <p>{item.time}</p>
                                             </div>
                                         </div>

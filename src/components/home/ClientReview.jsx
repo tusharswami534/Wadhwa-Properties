@@ -4,6 +4,8 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { CLIENT_REVIEW_LIST } from '../../utils/helper';
+import Stars from '/src/assets/images/png/stars-img.png'
+import ClientReviewVactor from '/src/assets/images/png/client-review-vactor.png'
 
 
 
@@ -43,11 +45,11 @@ const ClientReview = () => {
                         {CLIENT_REVIEW_LIST.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div className="flex relative flex-col p-[25px_26px_19px_26px] border border-orange rounded-2xl">
-                                    <img className='absolute top-6 right-6' src="./src/assets/images/png/client-review-vactor.png" alt="" />
+                                    <img className='absolute top-6 right-6' src={ClientReviewVactor} alt="homea" />
                                     <img className='size-[101px]' src={item.authorImage} alt="author img" />
                                     <div className="flex items-center gap-3 pt-5">
                                         <p className='text-off-black/70 text-xl font-semibold leading-[100%]'>{item.author}</p>
-                                        <img src='./src/assets/images/png/stars-img.png' alt="star" />
+                                        <img src={Stars} alt="star" />
                                     </div>
                                     <p className='text-xl font-semibold leading-[100%] pt-1.5 text-off-black'>{item.title}</p>
                                     <p className='max-w-[466px] text-grey leading-[150%] pt-2.5'>{item.description}</p>
@@ -57,7 +59,6 @@ const ClientReview = () => {
                     </Swiper>
                 </div>
 
-                {/* Custom Swiper Dots */}
                 <div className="custom-swiper-pagination mt-6 flex justify-center"></div>
             </div>
         </div>

@@ -10,10 +10,10 @@ const Hero = () => {
     return (
         <div className='max-w-[1920px] px-5 mx-auto'>
             <div className='max-w-[1344px] rounded-4xl max-md:rounded-3xl max-sm:rounded-2xl px-3 home-hero-bg mx-auto pt-[103px] max-lg:pt-[70px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-center flex-col items-center'>
-                <button className='text-[13px] leading-[292%] text-white px-3.5 border border-solid border-white rounded-full'>LET US GUIDE YOUR PROPERTY</button>
+                <button className='text-[13px] leading-[292%] text-white px-3.5 font-manrope border border-solid border-white rounded-full'>LET US GUIDE YOUR PROPERTY</button>
                 <h1 className='text-6xl max-lg:text-5xl max-md:text-4xl max-w-[862px] text-center font-bold text-white leading-[125%] pt-4'>Find Your Dream Property in Hisar</h1>
                 <div className='w-full justify-center flex flex-col items-center'>
-                    <div className='max-w-[365px] max-lg:pt-4 rounded-tl-xl overflow-hidden rounded-tr-xl'>
+                    <div className='max-w-[366px] max-lg:pt-4 rounded-tl-xl overflow-hidden rounded-tr-xl'>
                         {HERO_TAB.map((item, index) => (
                             <button onClick={() => setSearchParams({ tab: item })} key={index} className={`py-[9.85px] max-md:py-1.5 max-md:px-5 cursor-pointer px-[30px] border-x border-solid  ${index === 0 ? 'border-transparent' : index === HERO_TAB.length - 1 ? 'border-transparent' : 'border-blue'} ${activeTab === item ? 'bg-blue text-white' : 'bg-light-grey text-black'}`}>{item}</button>
                         ))}

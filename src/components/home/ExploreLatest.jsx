@@ -27,10 +27,10 @@ const ExploreLatest = () => {
                 </div>
                 <button className='py-[16px] max-w-[158px] mx-auto mt-[32px] mb-[120px] max-lg:mb-[70px] max-md:mb-[50px] text-white font-bold rounded-full cursor-pointer px-[36px] bg-[#1D3557]'>View More</button>
                 <div>
-                    <div className='flex gap-6 flex-wrap max-w-[1140px] mx-auto'>
+                    <div className='flex gap-6 flex-wrap max-w-[1140px] justify-center mx-auto'>
                         {EXPLORE_LIST.map((item, index) => (
                             <div key={index} className="border-[#EFEFEF] border rounded-[20px] max-w-[364px]">
-                                <img className='md:max-w-[364px] w-full md:h-[274px] rounded-t-[20px] ' src={item.img} alt="" />
+                                <img className='md:max-w-[364px] w-full md:h-[274px] rounded-t-[20px] ' src={item.img} alt="images" />
                                 <div className="p-4 md:pb-8  ">
                                     <p className='text-xl font-medium text-dark-black pb-3'>Luxury Family Home</p>
                                     <p className='gap-[5px] flex items-center pb-6 text-grey'><span className='size-5'><Icons icon="pathLocationIcon" /></span> 1800-1818 79th St</p>
