@@ -5,8 +5,8 @@ import Icons from '../../utils/icons'
 const ExploreLatest = () => {
     return (
         <>
-            <div className='max-w-[1440px] flex flex-wrap flex-col justify-center mx-auto'>
-                <div className='flex flex-wrap'>
+            <div className='max-w-[1440px] flex flex-wrap px-4 flex-col justify-center mx-auto'>
+                <div className='flex flex-wrap justify-center'>
                     {EXPLORE_MOE.map((item, index) => (
                         <div key={index} className='max-w-[360px] group cursor-pointer relative w-full'>
                             <img className='w-full' src={item.img} alt={`explore${index + 1}`} />
