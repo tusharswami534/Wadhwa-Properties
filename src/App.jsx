@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blogs />} />
           <Route path="/blog/:slug" element={<BlogDetailsPage />} />
-          <Route path="/services" element={<VirtualTourPage />} />
+          {/* <Route path="/services" element={<VirtualTourPage />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
